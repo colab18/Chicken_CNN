@@ -273,3 +273,98 @@ x==========x]
 [2023-07-19 16:57:36,352: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
 
 x==========x]
+[2023-07-19 17:56:36,980: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-07-19 17:56:36,983: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-07-19 17:56:36,992: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-07-19 17:56:36,994: INFO: common: created directory at: artifacts]
+[2023-07-19 17:56:36,998: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-07-19 17:56:37,000: INFO: data_ingestion: File already exists of size: ~ 11345 KB]
+[2023-07-19 17:56:38,472: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-07-19 17:56:38,472: INFO: main: *******************]
+[2023-07-19 17:56:38,472: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2023-07-19 17:56:38,488: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-07-19 17:56:38,489: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-07-19 17:56:38,495: INFO: common: created directory at: artifacts]
+[2023-07-19 17:56:38,498: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-07-19 17:56:39,161: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-07-19 17:56:39,483: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2023-07-19 17:56:39,483: INFO: main: *******************]
+[2023-07-19 17:56:39,486: INFO: main: >>>>>> stage Training started <<<<<<]
+[2023-07-19 17:56:39,486: ERROR: main: name 'ModelTrainingPipeline' is not defined]
+Traceback (most recent call last):
+  File ".\main.py", line 31, in <module>
+    model_trainer = ModelTrainingPipeline()
+NameError: name 'ModelTrainingPipeline' is not defined
+[2023-07-19 17:57:39,673: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-07-19 17:57:39,687: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-07-19 17:57:39,692: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-07-19 17:57:39,692: INFO: common: created directory at: artifacts]
+[2023-07-19 17:57:39,692: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-07-19 17:57:39,702: INFO: data_ingestion: File already exists of size: ~ 11345 KB]
+[2023-07-19 17:57:40,833: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-07-19 17:57:40,833: INFO: main: *******************]
+[2023-07-19 17:57:40,844: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2023-07-19 17:57:40,846: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-07-19 17:57:40,849: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-07-19 17:57:40,849: INFO: common: created directory at: artifacts]
+[2023-07-19 17:57:40,849: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-07-19 17:57:41,334: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-07-19 17:57:41,635: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2023-07-19 17:57:41,635: INFO: main: *******************]
+[2023-07-19 17:57:41,635: INFO: main: >>>>>> stage Training started <<<<<<]
+[2023-07-19 17:57:41,635: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-07-19 17:57:41,635: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-07-19 17:57:41,643: INFO: common: created directory at: artifacts]
+[2023-07-19 17:57:41,648: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2023-07-19 17:57:41,648: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-07-19 17:57:41,664: ERROR: main: 'WindowsPath' object has no attribute 'endswith']
+Traceback (most recent call last):
+  File ".\main.py", line 32, in <module>
+    model_trainer.main()
+  File "c:\users\nr879ns\project azure\chicken_disease_model\src\cnnClassifier\pipeline\stage_03_training.py", line 19, in main
+    callback_list = prepare_callbacks.get_tb_ckpt_callbacks()
+  File "c:\users\nr879ns\project azure\chicken_disease_model\src\cnnClassifier\components\prepare_callbacks.py", line 36, in get_tb_ckpt_callbacks
+    self._create_ckpt_callbacks
+  File "c:\users\nr879ns\project azure\chicken_disease_model\src\cnnClassifier\components\prepare_callbacks.py", line 27, in _create_ckpt_callbacks
+    return tf.keras.callbacks.ModelCheckpoint(
+  File "C:\Users\NR879NS\Anaconda3\envs\cnncls\lib\site-packages\keras\src\callbacks.py", line 1369, in __init__
+    if filepath and filepath.endswith(".keras") and options is not None:
+AttributeError: 'WindowsPath' object has no attribute 'endswith'
+[2023-07-19 18:05:21,335: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-07-19 18:05:21,343: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-07-19 18:05:21,343: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-07-19 18:05:21,351: INFO: common: created directory at: artifacts]
+[2023-07-19 18:05:21,351: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-07-19 18:05:21,359: INFO: data_ingestion: File already exists of size: ~ 11345 KB]
+[2023-07-19 18:05:22,544: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-07-19 18:05:22,548: INFO: main: *******************]
+[2023-07-19 18:05:22,548: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2023-07-19 18:05:22,551: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-07-19 18:05:22,554: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-07-19 18:05:22,560: INFO: common: created directory at: artifacts]
+[2023-07-19 18:05:22,563: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-07-19 18:05:23,023: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-07-19 18:05:23,283: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2023-07-19 18:05:23,283: INFO: main: *******************]
+[2023-07-19 18:05:23,283: INFO: main: >>>>>> stage Training started <<<<<<]
+[2023-07-19 18:05:23,300: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-07-19 18:05:23,300: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-07-19 18:05:23,300: INFO: common: created directory at: artifacts]
+[2023-07-19 18:05:23,308: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2023-07-19 18:05:23,308: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-07-19 18:05:23,316: INFO: common: created directory at: artifacts\training]
+[2023-07-19 18:06:17,191: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
