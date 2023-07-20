@@ -472,3 +472,20 @@ x==========x]
 [2023-07-20 10:35:40,471: INFO: stage_04_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
 
 x==========x]
+[2023-07-20 11:15:20,645: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.173.159.99:8080]
+[2023-07-20 11:15:20,645: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-07-20 11:15:38,077: INFO: _internal: 10.173.159.99 - - [20/Jul/2023 11:15:38] "GET / HTTP/1.1" 200 -]
+[2023-07-20 11:16:10,443: INFO: _internal: 10.173.159.99 - - [20/Jul/2023 11:16:10] "POST /predict HTTP/1.1" 200 -]
+[2023-07-20 11:16:27,376: INFO: _internal: 10.173.159.99 - - [20/Jul/2023 11:16:27] "POST /predict HTTP/1.1" 200 -]
+[2023-07-20 11:16:51,723: INFO: _internal: 10.173.159.99 - - [20/Jul/2023 11:16:51] "POST /predict HTTP/1.1" 200 -]
+[2023-07-20 11:17:01,718: INFO: _internal: 10.173.159.99 - - [20/Jul/2023 11:17:01] "POST /predict HTTP/1.1" 200 -]
+[2023-07-20 11:17:45,035: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.173.159.99:8080]
+[2023-07-20 11:17:45,037: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-07-20 11:17:49,997: INFO: _internal: 10.173.159.99 - - [20/Jul/2023 11:17:49] "GET / HTTP/1.1" 200 -]
+[2023-07-20 11:17:59,432: INFO: _internal: 10.173.159.99 - - [20/Jul/2023 11:17:59] "POST /predict HTTP/1.1" 200 -]
